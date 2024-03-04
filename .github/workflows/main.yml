@@ -17,4 +17,4 @@ jobs:
         run: cd /home/ubuntu/myrepo    #give your actual path of your local repo 
         
       - name: copy all files in /var/www/html
-        run: sudo cp -r * /var/www/repo
+        run: sudo cp -r * /var/www/html/repo
