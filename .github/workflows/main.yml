@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: self-hosted  #if you want own host so give self hosted 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+     
+      - name: go to clone directory
+        run: cd /home/ubuntu/myrepo    #give your actual path of your local repo 
+        
+      - name: copy all files in /var/www/html
+        run: sudo cp -r * /var/www/repo
